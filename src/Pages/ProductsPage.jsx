@@ -29,7 +29,7 @@ export const ProductsPage = () => {
   const productsFilteredBySize = selectedSizesArray.length>0 ? productsFilteredByCategory.filter((product)=>{
     let productSelected = true;
     selectedSizesArray.forEach(size=>{
-      productSelected = productSelected || product.sizes.includes(size)
+      productSelected = productSelected && product.sizes.includes(size)
     });
     return productSelected
   }) : productsFilteredByCategory
