@@ -27,9 +27,9 @@ export const ProductsPage = () => {
   const productsFilteredByBrand = selectedBrandsArray.length>0 ?  products.filter(product=>selectedBrandsArray.includes(product.brand)) : products 
   const productsFilteredByCategory = selectedCategoriesArray.length>0 ?  productsFilteredByBrand.filter(product=>selectedCategoriesArray.includes(product.category)) : productsFilteredByBrand 
   const productsFilteredBySize = selectedSizesArray.length>0 ? productsFilteredByCategory.filter((product)=>{
-    let productSelected = true;
+    let productSelected = false
     selectedSizesArray.forEach(size=>{
-      productSelected = productSelected && product.sizes.includes(size)
+      productSelected = productSelected || product.sizes.includes(size)
     });
     return productSelected
   }) : productsFilteredByCategory
