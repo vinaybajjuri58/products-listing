@@ -85,7 +85,7 @@ export const products = [
     description:
       "95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline / Double stitching on bottom hem",
     category: "women",
-    sizes: ["M", "S"],
+    sizes: ["S", "M"],
     brand: "jockey",
     image: "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
   },
