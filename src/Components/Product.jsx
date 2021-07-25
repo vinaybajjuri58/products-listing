@@ -7,9 +7,9 @@ export const Product = ({ product }) => {
         src={image}
         alt={title}
       />
-      <p>{title}</p>
-      <p>{price}</p>
-      <p>{brand}</p>
+      <h4>{title}</h4>
+      <h5>{price}</h5>
+      <h4>{brand}</h4>
       <p>{category}</p>
       <>
         {sizes.map((size, index) => (

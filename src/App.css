@@ -12,4 +12,6 @@
     border: 2px solid black;
     margin: 5px;
     padding: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
 }
